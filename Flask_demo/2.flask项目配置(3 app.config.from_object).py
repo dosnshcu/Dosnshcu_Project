@@ -4,10 +4,10 @@ from flask import Flask
 
 # 2.初始化web应用程序的实例化对象
 app = Flask(__name__)  # __name__拿到当前文件名称
-class config(object):
+class Config(object):
     DEBUG = True
 
-app.config.from_object(config)
+app.config.from_object(Config)
 
 # 4.可以通过实例对象app提供的route装饰器，绑定视图与uri地址的关系
 @app.route('/')
