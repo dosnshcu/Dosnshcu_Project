@@ -1,2 +1,4 @@
 # conda create -n dosnshcu_env python=3.11
 flask
+fastapi
+uvicorn
